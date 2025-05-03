@@ -8,7 +8,7 @@ This repository contains a project that matches resumes to job descriptions usin
 
    ```bash
    git clone https://github.com/DianaVyshotravka/RecruiterAssistant.git
-   cd your-repo-name
+   cd RecruiterAssistant
 2. **Download the pre-trained model:**
 
 Download the mse_base.pth model file from the following Kaggle notebook: https://www.kaggle.com/code/diankav/sentiment-transformers
