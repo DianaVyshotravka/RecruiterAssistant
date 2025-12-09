@@ -15,8 +15,34 @@ Download the mse_base.pth model file from the following Kaggle notebook: https:/
 
 Place the mse_base.pth file in the root directory of this repository.
 
-3. **Run the notebook:**
+3. **Download pre-embedded dataset:**
 
-Open and run the back.ipynb notebook. This will launch a Gradio demo interface.
+
+4. **Setup PostgreSQL and restore backup**
+
 ```bash
-jupyter notebook back.ipynb
+docker compose up -d
+```
+5. **Setup python enviroment**
+\
+Python 3.11 is required 
+\
+for Linux
+```bash
+python3.11 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+```
+for Windows
+```bash
+python -m venv .venv && .venv\Scripts\activate && pip install -r requirements.txt
+```
+
+6. **Run the app**
+\
+for Linux
+```bash
+source .venv/bin/activate && python inference.py
+```
+for Windows
+```bash
+.venv\Scripts\activate && python inference.py
+```
